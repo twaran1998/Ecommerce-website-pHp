@@ -1,0 +1,563 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+}
+/* Header */
+.logo{
+    height: 80px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0,0,0,.6);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar li{
+    list-style: none;
+    padding: 0 20px;
+}
+.navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+.navbar li a:hover{
+    color: crimson;
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    background-color: #041e42
+}
+.footer .footertext h4{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-left: 30px;
+}
+.footer .footertext p{
+    margin-left: 30px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #818ea0;
+}
+.footer .footertext h4 span{
+    color: darkorange;
+}
+
+/* Admin Page & User Page*/
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+}
+.container .content{
+    text-align: center;
+}
+.container .content h3{
+    font-size: 30px;
+    color:black;
+}
+.container .content h3 span{
+    background: blanchedalmond;
+    box-shadow: 0 1px 20px rgba(0,0,0,.4);
+    color:black;
+    border-radius: 5px;
+    padding:0 15px;
+}
+.container .content h1{
+    font-size: 60px;
+    color:#333;
+}
+
+/* Register Page */
+.form-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 60px;
+}
+.form-container form{
+    padding:20px;
+    box-shadow: 0 1px 20px rgba(0,0,0,.5);
+    border-radius: 10px;
+    background: whitesmoke;
+    text-align: center;
+    width: 600px;
+}
+.form-container form h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+    background-color: crimson;
+    box-shadow: 0 2px 10px rgba(0,0,0,.5);
+    padding: 10px;
+    border-radius: 10px;
+    color:whitesmoke;
+}
+.form-container form label{
+    width: 100%;
+    float: left;
+    font-weight: bold;
+    color: #333;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 20px;
+}
+.form-container form input,.form-container form textarea,
+.form-container form select{
+   width: 100%;
+   padding:10px 15px;
+   font-size: 17px;
+   margin:8px 0;
+   background: #eee;
+   border-radius: 5px;
+}
+.form-container form .form-btn{
+    background: #333;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 30px;
+} 
+.form-container form .form-btn:hover{
+    cursor: pointer;
+    background: white;
+    color:#333;
+}
+.form-container form p a{
+    color: red;
+}
+.form-container form .error{
+    color: red;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Product Register Page */
+.form-container2{
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 60px;
+}
+.form-container2 .error2{
+    color: white;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    box-shadow: 0 1px 20px rgba(0,0,0,.7);
+    background-color: crimson;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+}
+.form-container2 .error2:hover{
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 1px 20px rgba(0,0,0,.7);
+    background-color: black;
+}
+
+/* Product Detail Page */
+.containe2{
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+}
+.container2 .content{
+    text-align: center;
+}
+.container2 .content h3{
+    font-size: 30px;
+    color:black;
+}
+.container2 .content h3 span{
+    background: blanchedalmond;
+    box-shadow: 0 1px 20px rgba(0,0,0,.4);
+    color:black;
+    border-radius: 5px;
+    padding:0 15px;
+}
+.container2 .content h1{
+    font-size: 60px;
+    color:#333;
+}
+.form-container3{
+    min-height: auto;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 60px;
+}
+.content-table{
+    border-collapse: collapse;
+    margin-left: 18%;
+    font-size: 20px;
+    min-width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 20px rgba(0,0,0,.6);
+}
+.content-table thead tr{
+    background-color: crimson;
+    color: #eee;
+    text-align: center;
+}
+.content-table thead tr th{
+    padding: 20px;
+}
+.content-table tbody td,
+.content-table tbody th{
+    padding: 17px 25px;
+}
+.content-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+.content-table tbody tr:nth-of-type(even){
+    border-bottom: 1px solid #f3f3f3;
+}
+.content-table tbody tr:hover{
+    background-color: #f5f5f5;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* User Product Selection Page */
+.containe2{
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+}
+.container2 .content{
+    text-align: center;
+}
+.container2 .content h3{
+    font-size: 30px;
+    color:black;
+}
+.container2 .content h3 span{
+    background: blanchedalmond;
+    box-shadow: 0 1px 20px rgba(0,0,0,.4);
+    color:black;
+    border-radius: 5px;
+    padding:0 15px;
+}
+.container2 .content h1{
+    font-size: 60px;
+    color:#333;
+}
+.form-container3{
+    min-height: auto;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 60px;
+}
+.content-table{
+    border-collapse: collapse;
+    margin-left: 18%;
+    font-size: 20px;
+    min-width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 20px rgba(0,0,0,.6);
+}
+.content-table thead tr{
+    background-color: crimson;
+    color: #eee;
+    text-align: center;
+}
+.content-table thead tr th{
+    padding: 20px;
+}
+.content-table tbody td,
+.content-table tbody th{
+    padding: 17px 25px;
+}
+.content-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+.content-table tbody tr:nth-of-type(even){
+    border-bottom: 1px solid #f3f3f3;
+}
+.content-table tbody tr:hover{
+    background-color: #f5f5f5;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Buy Product Selection Page */
+.containe2{
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+}
+.container2 .content{
+    text-align: center;
+}
+.container2 .content h3{
+    font-size: 30px;
+    color:black;
+}
+.container2 .content h3 span{
+    background: blanchedalmond;
+    box-shadow: 0 1px 20px rgba(0,0,0,.4);
+    color:black;
+    border-radius: 5px;
+    padding:0 15px;
+}
+.container2 .content h1{
+    font-size: 60px;
+    color:#333;
+}
+.form-container3{
+    min-height: auto;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 60px;
+}
+.content-table2{
+    border-collapse: collapse;
+    margin-left: 25%;
+    font-size: 20px;
+    min-width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 20px rgba(0,0,0,.6);
+}
+.content-table2 thead tr{
+    background-color: crimson;
+    color: #eee;
+    text-align: center;
+}
+.content-table2 thead tr th{
+    padding: 20px;
+}
+.content-table2 tbody td,
+.content-table2 tbody th{
+    padding: 17px 25px;
+}
+.content-table2 tbody tr{
+    border-bottom: 1px solid #dddddd;
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+.content-table2 tbody tr:nth-of-type(even){
+    border-bottom: 1px solid #f3f3f3;
+}
+.content-table2 tbody tr:hover{
+    background-color: #f5f5f5;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Show Cart Page */
+
+.container2 .content h2{
+    font-size: 30px;
+    color:#333;
+}
+.content-table3{
+    border-collapse: collapse;
+    margin-left: 30%;
+    font-size: 20px;
+    min-width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 20px rgba(0,0,0,.6);
+}
+.content-table3 thead tr{
+    background-color: crimson;
+    color: #eee;
+    text-align: center;
+}
+.content-table3 thead tr th{
+    padding: 20px;
+}
+.content-table3 tbody td,
+.content-table3 tbody th{
+    padding: 17px 25px;
+}
+.content-table3 tbody tr{
+    border-bottom: 1px solid #dddddd;
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+.content-table3 tbody tr:nth-of-type(even){
+    border-bottom: 1px solid #f3f3f3;
+}
+.content-table3 tbody tr:hover{
+    background-color: #f5f5f5;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+.form-container3 form{
+    padding:20px 100px;
+    box-shadow: 0 1px 20px rgba(0,0,0,.5);
+    border-radius: 10px;
+    width: 1000px;
+    margin-left: 180px;
+    background: whitesmoke;
+    text-align: center;
+}
+.form-container3 form h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+    background-color: crimson;
+    box-shadow: 0 2px 10px rgba(0,0,0,.5);
+    padding: 10px;
+    border-radius: 10px;
+    color:whitesmoke;
+}
+.form-container3 form label{
+    width: 100%;
+    float: left;
+    font-weight: bold;
+    color: #333;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 20px;
+}
+.form-container3 form input,.form-container3 form textarea,
+.form-container3 form select{
+   width: 100%;
+   padding:10px 15px;
+   font-size: 17px;
+   margin:8px 0;
+   background: #eee;
+   border-radius: 5px;
+}
+.form-container3 form .form-btn{
+    background: #333;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 30px;
+} 
+.form-container3 form .form-btn:hover{
+    cursor: pointer;
+    background: white;
+    color:#333;
+}
+.form-container3 form p a{
+    color: red;
+}
+.form-container3 form .error{
+    color: red;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Add to Cart Page */
+.form-container4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 60px;
+}
+.form-container4 form{
+    padding:20px;
+    box-shadow: 0 1px 20px rgba(0,0,0,.5);
+    border-radius: 10px;
+    background: whitesmoke;
+    text-align: center;
+    width: 600px;
+}
+.form-container4 form h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+    background-color: crimson;
+    box-shadow: 0 2px 10px rgba(0,0,0,.5);
+    padding: 10px;
+    border-radius: 10px;
+    color:whitesmoke;
+}
+.form-container4 form label{
+    width: 100%;
+    float: left;
+    font-weight: bold;
+    color: #333;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 20px;
+}
+.form-container4 form input,.form-container4 form textarea,
+.form-container4 form select{
+   width: 100%;
+   padding:10px 15px;
+   font-size: 17px;
+   margin:8px 0;
+   background: #eee;
+   border-radius: 5px;
+}
+.form-container4 form .form-btn{
+    background: #333;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 30px;
+} 
+.form-container4 form .form-btn:hover{
+    cursor: pointer;
+    background: white;
+    color:#333;
+}
+.form-container4 form p a{
+    color: red;
+}
+.form-container4 form .error{
+    color: red;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+}
